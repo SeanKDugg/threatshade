@@ -1,8 +1,45 @@
-/** test **/
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 body {
-    background-color: aqua!important;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    background-color: brown !important; /*test*/
 }
 
-h1 {
-    color: red;
+h1,h2,h3,h4,h5,h6{
+    font-family: "Lexend", sans-serif;
+    font-weight: 700;
+}
+
+/* Navbar */
+
+.logo {
+    width: 25vw;
+}
+
+.navbar {
+    font-weight: 700;
+    padding-right: 6vw !important;
+    padding-top: 3vh !important;
+}
+
+.list-group-item {
+    background-color: transparent !important;
+    border: none !important;
+    text-decoration: none !important;
+}
+
+a {
+    color: #ffffff !important;
+}
+
+a:hover, a:active {
+    color: #fbb040 !important;
+    text-decoration: none !important;
+}
+
+/* Other */
+
+.uppercase {
+    text-transform: uppercase;
 }

@@ -1,0 +1,8 @@
+@import url('static/css/base.css');
+
+body{
+    background-image: url('/static/images/BKG - Homepage (short)-150dpi.jpg') !important;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}

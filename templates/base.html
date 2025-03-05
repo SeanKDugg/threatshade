@@ -5,7 +5,7 @@
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <meta name="keywords" content="security assessment, cybersecurity, LLM implementations, cloud security, OffSec, offensive security, cyber threat">
-            <title>{% block title %}{% endblock %}</title>
+            <title>{% block title %}ThreatShade{% endblock %}</title>
             <link rel="icon" href="static\images\favicon.svg" sizes="any" type="image/svg+xml">
             {% block styles %}
                 <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
@@ -14,8 +14,10 @@
         {% endblock %}
     </head>
     <body>
+    {% block body %}
         {% block header %}{% endblock %}
         {% block content %}{% endblock %}
         {% block footer %}{% endblock %}
+    {% endblock %}
     </body>
 </html>

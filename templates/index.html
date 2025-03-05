@@ -1,22 +1,23 @@
 
 {% extends 'base.html' %}
 
-{% block head %}
+{% block title %}
+    Request a Security Assessment | Protect Your Business with Expert Cybersecurity Solutions
+{% endblock %}
 
+{% block head %}
+    {{ super() }}
     <meta name="description" content="Request a comprehensive Security Assessment today and ensure your business is protected from cybersecurity threats. Our experts will evaluate your systems for vulnerabilities.">
 
     {% block styles %}
     <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
     {% endblock %}
 
-    {% block title %}
-    Request a Security Assessment | Protect Your Business with Expert Cybersecurity Solutions
-    {% endblock %}
-
 {% endblock %}
 
-{% include 'navbar-index.html' %}
-
-{% block content %}
-    <h1>Hello</h1>
+{% block body %}
+    {% include 'navbar-index.html' %}
+    {% block content %}
+        <h1>Hello</h1>
+    {% endblock %}
 {% endblock %}

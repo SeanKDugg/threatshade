@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block footer %}
+    {{ super() }}
+    <footer class="w-100">
+        <div class="container w-100">
+            <div class="d-flex container flex-row justify-content-between ">
+                <div class="d-flex flex-row align-content-end ml-3 flex-shrink">
+                    <a href="https://www.linkedin.com/">
+                        <img class="buttons-footer" src="{{ url_for('static', filename='images/Button - Standard - 150dpi-05.png') }}" alt="LinkedIn">
+                    </a>
+                    <a href="#">
+                        <img class="buttons-footer" src="{{ url_for('static', filename='images/Button - Standard - 150dpi-06.png') }}" alt="Map">
+                    </a>
+                    <a href="#">
+                        <img class="buttons-footer" src="{{ url_for('static', filename='images/Button - Standard - 150dpi-07.png') }}" alt="Twitter/ X">
+                    </a>
+                </div>
+                <div class="container d-flex flex-row flex-grow mr-3 justify-content-end footer-links navbar">
+                    <div class=" d-flex flex-row justify-content-around align-content-start uppercase">
+                        <a href="#" class="m-2 h3">//Services</a>
+                        <a href="#" class="m-2 h3">//Contact Us</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-white container d-flex flex-column justify-content-center w-100 small">
+                <p class="d-flex flex-row justify-content-center">//2024 &#169 ThreatShade | All Rights Reserved |<a href="#" class="ml-1"> Privacy Policy</a></p>
+            </div>
+        </div>
+    </footer>
+{% endblock %}

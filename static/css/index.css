@@ -5,4 +5,11 @@ body{
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
+    max-width: 100vw !important;
+    overflow-x: hidden
+}
+
+.center{
+    margin-left: 50%;
+    margin-right: 50%;
 }

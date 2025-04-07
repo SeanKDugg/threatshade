@@ -18,7 +18,16 @@
 {% block body %}
     {% include 'navbar-index.html' %}
     {% block content %}
-        <h1>Hello</h1>
+        {% for paragraph in data['index'] %}
+        <div class="container text-white">
+            <h2>
+                {{ paragraph['title'] }}
+            </h2>
+            <div>
+                {{ paragraph['content'] }}
+            </div>
+        </div>
+        {% endfor %}
     {% endblock %}
     {% include 'footer-index.html' %}
 {% endblock %}

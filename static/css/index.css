@@ -1,12 +1,7 @@
-@import url('static/css/base.css');
+@import url('../base.css');
 
 body{
-    background-image: url('/static/images/BKG - Homepage (short)-150dpi.jpg') !important;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-size: cover;
-    max-width: 100vw !important;
-    overflow-x: hidden
+    background-image: url('../images/BKG - Homepage (short)-150dpi.jpg') !important;
 }
 
 .center{

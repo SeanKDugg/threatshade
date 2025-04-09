@@ -18,13 +18,61 @@
 {% block body %}
     {% include 'navbar-contact.html' %}
     {% block content %}
-        {% for paragraph in data['contact'] %}
-        <div class="container text-white">
+        
+        <form class="container text-black center p-3">
+            <h1 class="uppercase">// Request <br> Security Assessment</h1>
+            <div class="row uppercase">
+                <div class="col">
+                    <label for="name" class="font-weight-bold">//Name</label>
+                    <input type="text" name="name" id="name" class="form-control" placeholder="//ENTER" required>
+                </div>
+                <div class="col">
+                    <label for="business" class="font-weight-bold">//Business</label>
+                    <input type="text" name="business" id="business" class="form-control" placeholder="//ENTER" required>
+                </div>
+            </div>
+            <div class="row uppercase">
+                <div class="col">
+                    <label for="startdate" class="font-weight-bold">//Prefered start date</label>
+                    <input type="date" name="start" id="startdate" class="form-control" required>
+                </div>
+                <div class="col">
+                    <label for="emailaddress" class="font-weight-bold">// Email</label>
+                    <input type="email" name="email" id="emailaddress" class="form-control" placeholder="Email" required>
+                </div>
+            </div>
+            <div class="row uppercase">
+                <div class="col">
+                    <label for="internetfacing" class="font-weight-bold">// Internet facing</label>
+                    <select name="internetfacing" id="internetfacing" class="form-control" placeholder="// Select" required>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="assesmenttype" class="font-weight-bold uppercase">// Assessment type</label>
+                    <textarea name="assesmenttype" id="assesmenttype" class="form-control" placeholder="// ENTER" required>
+                    </textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-white small">
+                    {% for paragraph in data['contact'] %}
+                    <p>{{ paragraph['title'] }}</p>
+                    <p>{{ paragraph['content'] }}</p>
+                </div>
+                <div class="col">
+                    <button type="submit" class="btn"><img src="{{url_for('static', filename='images/Button - Standard - 150dpi-04.png')}}" alt="Submit"></button>
+                </div>
+            </div>
+        </form>
+        
+        <div class="">
             <h2>
-                {{ paragraph['title'] }}
+                
             </h2>
             <div>
-                {{ paragraph['content'] }}
+                
             </div>
         </div>
         {% endfor %}

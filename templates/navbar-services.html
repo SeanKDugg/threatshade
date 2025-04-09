@@ -11,13 +11,13 @@
         <div>
             <ul class="list-group list-group-horizontal navbar uppercase">
                 <li class="list-group-item">
-                    <a href="#" class="h3">//Home</a>
+                    <a href="{{ url_for('index') }}" class="h3">//Home</a>
                 </li>
                 <li class="list-group-item">
-                    <a href="#" class="h3">//Services</a>
+                    <a href="{{ url_for('services') }}" class="h3 active">//Services</a>
                 </li>
                 <li class="list-group-item">
-                    <a href="#" class="h3">//Contact Us</a>
+                    <a href="{{ url_for('contact') }}" class="h3">//Contact Us</a>
                 </li>
             </ul>
         </div>

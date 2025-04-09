@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block header %}
+    {{ super() }}
+    <div class="d-flex flex-row justify-content-between pt-3">
+        <div class="logo">
+            <a href="{{ url_for('index') }}">
+                <img src="{{ url_for('static', filename='images/ThreatShade Rectangle Logo - 3.svg') }}" alt="logo">
+            </a>
+        </div>
+        <div>
+            <ul class="list-group list-group-horizontal navbar uppercase">
+                <li class="list-group-item">
+                    <a href="{{ url_for('index') }}" class="h3">//Home</a>
+                </li>
+                <li class="list-group-item">
+                    <a href="{{ url_for('services') }}" class="h3">//Services</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+{% endblock %}

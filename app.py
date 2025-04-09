@@ -26,5 +26,12 @@ Defines the route for services page
 def services():
     return render_template('services.html', data=data)
 
+"""
+Defines the route for contact page
+"""
+@app.route('/contact-us/')
+def contact():
+    return render_template('contact.html', data=data)
+
 if __name__ == "__main__":
     app.run(debug=True)

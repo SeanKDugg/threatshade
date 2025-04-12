@@ -4,14 +4,20 @@
     {{ super() }}
     <footer class="w-100">
         <div class="container w-100">
-            <div class="container d-flex flex-row flex-grow mr-3 justify-content-end footer-links navbar">
-                <div class=" d-flex flex-row justify-content-around align-content-start uppercase">
+            <div class="container d-flex flex-column flex-md-row flex-grow mr-md-3 justify-content-center justify-content-md-end footer-links navbar">
+                <div class="d-flex flex-column flex-md-row justify-content-center justify-content-md-around align-content-center align-content-md-start uppercase">
                     <a href="{{ url_for('index') }}" class="m-2 h3">//Home</a>
                     <a href="{{ url_for('contact') }}" class="m-2 h3">//Contact Us</a>
                 </div>
             </div>
-            <div class="text-white container d-flex flex-column justify-content-center w-100 small">
-                <p class="d-flex flex-row justify-content-center">//2024 &#169 ThreatShade | All Rights Reserved |<a href="#" class="ml-1"> Privacy Policy</a></p>
+            <div class="container d-flex flex-column w-100 small justify-content-center">
+                <div class="mt-2 d-flex flex-column flex-md-row justify-content-center justify-content-evenly align-items-center">
+                    <p>//2024 &#169 ThreatShade</p>
+                    <p class="mx-1">| All Rights Reserved |</p>
+                    <p>
+                       <a href="#" class="p-0 text-black align-self-center"> Privacy Policy</a> 
+                    </p>
+                </div>
             </div>
         </div>
     </footer>

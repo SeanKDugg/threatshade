@@ -11,27 +11,26 @@ Reads json file with page contents
 with open('text_content.json', encoding="utf-8") as json_file:
     data = json.load(json_file)
 
-
 """
 Defines the route for index page
 """
 @app.route('/')
 def index():
-    return render_template('index.html', data=data)
+    return render_template('index.html', index=data['index'][0])
 
 """
 Defines the route for services page
 """
 @app.route('/services/')
 def services():
-    return render_template('services.html', data=data)
+    return render_template('services.html', services=data['services'][0])
 
 """
 Defines the route for contact page
 """
 @app.route('/contact-us/')
 def contact():
-    return render_template('contact.html', data=data)
+    return render_template('contact.html', contact=data['contact'][0])
 
 """
 Handles 404 error

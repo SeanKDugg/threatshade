@@ -1,0 +1,32 @@
+
+{% extends 'base.html' %}
+
+{% block title %}
+    Threatshade | Innovative Irish Cybersecurity Startup with Environmental Focus
+{% endblock %}
+
+{% block head %}
+    {{ super() }}
+    <meta name="description" content="Threatshade is an innovative Irish cybersecurity startup offering OffSec solutions. We prioritise ethical security practices and environmental responsibility, dedicating part of our earnings to charitable causes. Protect your business while supporting sustainability.">
+
+    {% block styles %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/contact.css') }}">
+    {% endblock %}
+
+{% endblock %}
+
+{% block body %}
+    {% include 'navbar-contact.html' %}
+    {% block content %}
+        <div class="container d-flex flex-column align-items-center justify-content-center uppercase mt-5">
+            <div class="container d-flex flex-row justify-content-center align-items-center mt-5">            
+                <h1 class="yellow p404 mr-5">404</h1>
+                <h2 class="display-4 mt-2 ml-5">Page not found</h2>
+            </div>
+            <p class="mt-5">
+                Click <a href="{{ url_for('index') }}" class="text-black"><u>here</u></a> to return to homepage.
+            </p>
+        </div>
+    {% endblock %}
+    {% include 'footer-contact.html' %}
+{% endblock %}

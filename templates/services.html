@@ -19,16 +19,46 @@
 {% block body %}
     {% include 'navbar-services.html' %}
     {% block content %}
-        {% for paragraph in data['services'] %}
-        <div class="container text-white">
-            <h2>
-                {{ paragraph['title'] }}
-            </h2>
-            <div>
-                {{ paragraph['content'] }}
+        
+    <div class="container content text-white text-center text-lg-left mt-3">
+        <div class="mb-5">
+            <h1 class="mt-5 mb-3">//Comprehensive
+                <br><span class="yellow ml-lg-5 pl-lg-5">Cybersecurity Services:</span>
+            </h1>
+            <div class="py-3 container">
+                <h2 class="mb-3 mx-lg-5 d-flex flex-column align-items-center align-items-lg-end text-lg-right yellow uppercase display-4">
+                    //Penetration <br>Testing
+                </h2>            
+                <div class="pt-2 mx-lg-5 py-lg-4 d-flex flex-column align-items-center align-items-lg-end text-lg-right">
+                    <p class="pb-2 wrapper">{{ paragraph1 }}</p>
+                    <p class="wrapper">{{ paragraph2 }}</p>
+                </div>
             </div>
         </div>
-        {% endfor %}
+        <div class="px-lg-3 container d-flex flex-column justify-content-center pb-5 mb-5">
+            <h2 class="mb-3 mx-lg-5 flex-column justify-content-center justify-content-lg-start yellow uppercase display-4">
+                //Vulnerability <br>Scanning
+            </h2>
+            <div class="p-lg-3 container d-flex flex-column align-items-center align-items-lg-start">
+                <div class="pt-2 mx-lg-5 px-lg-4">
+                    <p class="pb-2 wrapper">{{ paragraph3 }}</p>
+                    <p class="wrapper">{{ paragraph4 }}</p>
+                </div>
+            </div>
+        </div>
+        <div class="px-lg-3 container d-flex flex-column justify-content-center pb-5 mb-5">
+            <h2 class="my-3 mx-lg-5 flex-column align-items-center align-items-lg-start yellow uppercase display-4">
+                //Threat <br>Modelling
+            </h2>
+            <div class="p-lg-3 container d-flex flex-column align-items-center align-items-lg-start">
+                <div class="pt-2 mx-lg-5 px-lg-4">
+                    <p class="pb-2 wrapper">{{ paragraph5 }}</p>
+                    <p class="wrapper">{{ paragraph6 }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     {% endblock %}
     {% include 'footer-services.html' %}
 {% endblock %}

@@ -2,4 +2,9 @@
 
 body {
     background-image: url('../images/BKG - Services (short)-150dpi.jpg') !important;
+    background-position: 86% 14%;
+}
+
+.wrapper {
+    width: 45vw !important;
 }

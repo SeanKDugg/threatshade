@@ -13,11 +13,3 @@ body{
     height: 50vh;
     margin-top: -5vh;
 }
-
-
-/* Other */
-
-.center{
-    margin-left: 50%;
-    margin-right: 50%;
-}

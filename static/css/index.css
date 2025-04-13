@@ -7,9 +7,27 @@ body{
     background-position: 87% 13%;
 }
 
-/*Images*/
+/* Images */
 
 .phone-img{
     height: 50vh;
     margin-top: -5vh;
+}
+
+/* Button */
+
+.button-index {
+    height: 5rem;
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+
+a>.button-index:hover{
+    content: url('../images/BUTTONS - Hover over - 150dpi-02.png');
+    height: 8rem !important;
+}
+
+a>.button-index:active{
+   content: url('../images/BUTTON - Pressed - 150dpi-02.png');
+   height: 6rem !important;
 }

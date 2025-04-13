@@ -24,9 +24,14 @@
                     <br><span class="ml-lg-5 pl-lg-5">Security Assessment</span></span>
                 </h1>
                 <div class="p-lg-3 container d-flex flex-column flex-lg-row justify-content-center justify-content-lg-around">
-                    <div class="pt-2 mx-lg-5 px-lg-4 ">
+                    <div class="pt-2 mx-lg-5 px-lg-4 d-flex flex-column">
                         <p>{{ paragraph1 }}</p>
                         <p>{{ paragraph2 }}</p>
+                        <button type="button" class="btn d-flex flex-row justify-content-center">
+                            <a href="{{ url_for('contact') }}">
+                                <img src="{{url_for('static', filename='/images/Button - Standard - 150dpi-01.png')}}" class="button-index" alt="Schedule Risk Assessment">
+                            </a>
+                        </button>
                     </div>
                     <div>
                         <img src="{{ url_for('static', filename='/images/Floating phone - 1080px tall - 150dpi.png') }}" alt="Picture of a mobile phone" class="phone-img">

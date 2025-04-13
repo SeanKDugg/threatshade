@@ -19,63 +19,55 @@
     {% include 'navbar-contact.html' %}
     {% block content %}
         
-        <form class="container content text-black center p-3">
-            <h1 class="uppercase">// Request <br> Security Assessment</h1>
-            <div class="row uppercase">
-                <div class="col">
-                    <label for="name" class="font-weight-bold">//Name</label>
-                    <input type="text" name="name" id="name" class="form-control" placeholder="//ENTER" required>
+        <form class="container content text-black center pt-5 mt-5px-5 mx-lg-5">
+            <div class="ml-lg-5 pl-lg-5">
+                <h1 class="uppercase yellow ml-lg-5 pl-lg-5 pb-3">// Request <br> Security Assessment</h1>
+                <div class="row uppercase ml-lg-5 pl-lg-5">
+                    <div class="col pt-1 pb-2
+                    ">
+                        <label for="name" class="font-weight-bold">//Name<span class="yellow">*</span></label>
+                        <input type="text" name="name" id="name" class="form-control" placeholder="//ENTER" required>
+                    </div>
+                    <div class="col pt-1 pb-2
+                    ">
+                        <label for="business" class="font-weight-bold">//Business<span class="yellow">*</span></label>
+                        <input type="text" name="business" id="business" class="form-control" placeholder="//ENTER" required>
+                    </div>
                 </div>
-                <div class="col">
-                    <label for="business" class="font-weight-bold">//Business</label>
-                    <input type="text" name="business" id="business" class="form-control" placeholder="//ENTER" required>
+                <div class="row uppercase ml-lg-5 pl-lg-5">
+                    <div class="col pt-1 pb-2
+                    ">
+                        <label for="startdate" class="font-weight-bold">//Prefered start date<span class="yellow">*</span></label>
+                        <input type="date" name="start" id="startdate" class="form-control" required>
+                    </div>
+                    <div class="col pt-1 pb-2
+                    ">
+                        <label for="emailaddress" class="font-weight-bold">//Email<span class="yellow">*</span></label>
+                        <input type="email" name="email" id="emailaddress" class="form-control" placeholder="Email" required>
+                    </div>
                 </div>
-            </div>
-            <div class="row uppercase">
-                <div class="col">
-                    <label for="startdate" class="font-weight-bold">//Prefered start date</label>
-                    <input type="date" name="start" id="startdate" class="form-control" required>
+                <div class="row ml-lg-5 pl-lg-5">
+                    <div class="col pt-1 pb-2
+                    ">
+                        <label for="assesmenttype" class="font-weight-bold uppercase">//Assessment type<span class="yellow">*</span></label>
+                        <textarea name="assesmenttype" id="assesmenttype" class="form-control" placeholder="// ENTER" required>
+                        </textarea>
+                    </div>
                 </div>
-                <div class="col">
-                    <label for="emailaddress" class="font-weight-bold">// Email</label>
-                    <input type="email" name="email" id="emailaddress" class="form-control" placeholder="Email" required>
-                </div>
-            </div>
-            <div class="row uppercase">
-                <div class="col">
-                    <label for="internetfacing" class="font-weight-bold">// Internet facing</label>
-                    <select name="internetfacing" id="internetfacing" class="form-control" placeholder="// Select" required>
-                    </select>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <label for="assesmenttype" class="font-weight-bold uppercase">// Assessment type</label>
-                    <textarea name="assesmenttype" id="assesmenttype" class="form-control" placeholder="// ENTER" required>
-                    </textarea>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col text-white small">
-                    {% for paragraph in data['contact'] %}
-                    <p>{{ paragraph['title'] }}</p>
-                    <p>{{ paragraph['content'] }}</p>
-                </div>
-                <div class="col">
-                    <button type="submit" class="btn"><img src="{{url_for('static', filename='images/Button - Standard - 150dpi-04.png')}}" alt="Submit"></button>
+                <div class="d-flex flex-column flex-md-row justify-content-center justify-content-lg-between ml-lg-5 pl-lg-5">
+                    <div class="flex-column col-md-7 col-lg-9 text-white small">
+                        <p>//GDPR Compliance</p>
+                        <p> {{ paragraph1 }} </p>
+                    </div>
+                    <div class="flex-column col-md-5 col-lg-3">
+                        <button type="submit" class="btn d-flex flex-rown justify-content-center justify-content-md-end">
+                            <img src="{{url_for('static', filename='images/Button - Standard - 150dpi-04.png')}}" class="button-submit" alt="Submit">
+                        </button>
+                    </div>
                 </div>
             </div>
         </form>
         
-        <div class="">
-            <h2>
-                
-            </h2>
-            <div>
-                
-            </div>
-        </div>
-        {% endfor %}
     {% endblock %}
     {% include 'footer-contact.html' %}
 {% endblock %}

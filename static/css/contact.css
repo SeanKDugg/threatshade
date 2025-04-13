@@ -2,5 +2,11 @@
 
 body {
     background-image: url('../images/BKG - Generic(long)-150dpi.jpg') !important;
-    background-position: left;
+    background-position: 79% 21%;
+}
+
+.button-submit {
+    height: 4rem;
+    margin-top: 5vh;
+    margin-bottom: 20vh;  
 }

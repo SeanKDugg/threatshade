@@ -18,16 +18,29 @@
 {% block body %}
     {% include 'navbar-index.html' %}
     {% block content %}
-        {% for paragraph in data['index'] %}
-        <div class="container text-white">
-            <h2>
-                {{ paragraph['title'] }}
-            </h2>
-            <div>
-                {{ paragraph['content'] }}
+        <div class="container content text-white text-center text-lg-left mt-3">
+            <div class="mb-5">
+                <h1 class="mt-5">//Schedule your <span class="yellow">Free 
+                    <br><span class="ml-lg-5 pl-lg-5">Security Assessment</span></span>
+                </h1>
+                <div class="p-lg-3 container d-flex flex-column flex-lg-row justify-content-center justify-content-lg-around">
+                    <div class="pt-2 mx-lg-5 px-lg-4 ">
+                        <p>{{ paragraph1 }}</p>
+                        <p>{{ paragraph2 }}</p>
+                    </div>
+                    <div>
+                        <img src="{{ url_for('static', filename='/images/Floating phone - 1080px tall - 150dpi.png') }}" alt="Picture of a mobile phone" class="phone-img">
+                    </div>
+                </div>
+            </div>
+            <div class="px-lg-3 container d-flex flex-column justify-content-center py-5 my-5">
+                <h2 class="my-5 text-red display-4 uppercase" id="about">//About</h2>
+                <div class="pt-2 pb-5 mx-lg-5 px-lg-4 text-black">
+                    <p>{{ paragraph3 }}</p>
+                </div>
             </div>
         </div>
-        {% endfor %}
+    
     {% endblock %}
     {% include 'footer-index.html' %}
 {% endblock %}

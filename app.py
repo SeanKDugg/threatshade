@@ -52,7 +52,8 @@ Defines the route for contact page and passes json data to template
 """
 @app.route('/contact-us/')
 def contact():
-    return render_template('contact.html', contact=data['contact'][0])
+    contact=data['contact'][0]
+    return render_template('contact.html', paragraph1=contact['paragraph1'])
 
 """
 Handles 404 error

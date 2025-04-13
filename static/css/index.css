@@ -1,8 +1,21 @@
 @import url('../base.css');
 
+/* Custom background */
+
 body{
     background-image: url('../images/BKG - Homepage (short)-150dpi.jpg') !important;
+    background-position: 87% 13%;
 }
+
+/*Images*/
+
+.phone-img{
+    height: 50vh;
+    margin-top: -5vh;
+}
+
+
+/* Other */
 
 .center{
     margin-left: 50%;

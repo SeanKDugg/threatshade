@@ -94,3 +94,10 @@ footer {
     line-height: 1.2;
     text-shadow: 2px 2px 10px black;
 }
+
+/* Other */
+
+.center{
+    margin-left: 50%;
+    margin-right: 50%;
+}

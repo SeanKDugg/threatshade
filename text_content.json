@@ -32,5 +32,65 @@
             "title": "//GDPR Compliance",
             "paragraph1": "At Threatshade, safeguarding your privacy is our top priority. By submitting your information, you consent to the collection, processing, and storage of your personal data in full compliance with the General Data Protection Regulation (GDPR). We ensure that your data is only used for the specified purposes and will never be shared with third parties without your explicit consent. For more details, please review our Privacy Policy."
         }
+    ],
+    "policy": [
+        {
+            "title": "//Introduction",
+            "paragraph1": "ThreatShade (\"we,\" \"us,\" or \"our\") is committed to protecting and respecting your privacy. This Privacy Policy outlines our practices regarding the collection, use, and disclosure of your personal data when you use our services, including our penetration testing services."
+        },
+        {
+            "title": "//Information We Collect",
+            "paragraph1": "We may collect the following types of personal data:",
+            "paragraph2": "Contact Information: Such as name, email address, phone number, and company details.",
+            "paragraph3": "Technical Data: Including IP addresses, browser type and version, time zone setting, browser plug-in types and versions, operating system and platform, and other technology on the devices you use to access our website or services.",
+            "paragraph4": "Usage Data: Information about how you use our website and services."
+
+        },
+        {
+            "title": "//How We Use Your Information",
+            "paragraph1": "We use your personal data for the following purposes:",
+            "paragraph2": "To provide and maintain our services.",
+            "paragraph3": "To notify you about changes to our services.",
+            "paragraph4": "To allow you to participate in interactive features of our services when you choose to do so.",
+            "paragraph5": "To provide customer support.",
+            "paragraph6": "To gather analysis or valuable information so that we can improve our services.",
+            "paragraph7": "To monitor the usage of our services.",
+            "paragraph8": "To detect, prevent, and address technical issues.",
+            "paragraph9": "To comply with legal obligations."
+        },
+        {
+            "title": "//Sharing Your Information",
+            "paragraph1": "We do not share your personal data with third parties except in the following cases:",
+            "paragraph2": "With your consent.",
+            "paragraph3": "For compliance with a legal obligation.",
+            "paragraph4": "To protect and defend our rights or property.",
+            "paragraph5": "To prevent or investigate possible wrongdoing in connection with our services.",
+            "paragraph6": "To protect the personal safety of users of our services or the public."
+        },
+        {
+            "title": "//Data Security",
+            "paragraph1": "We take the security of your personal data seriously and use appropriate technical and organizational measures to protect it against unauthorized or unlawful processing, accidental loss, destruction, or damage."
+        },
+        {
+            "title": "//Your Rights",
+            "paragraph1": "You have the following rights regarding your personal data:",
+            "paragraph2": "Access: You can request access to your personal data",
+            "paragraph3": "Rectification: You can request correction of any inaccurate or incomplete data.",
+            "paragraph4": "Erasure: You can request deletion of your personal data, subject to certain conditions.",
+            "paragraph5": "Restriction: You can request the restriction of processing of your personal data.",
+            "paragraph6": "Portability: You can request transfer of your personal data to another party.",
+            "paragraph7": "Objection: You can object to the processing of your personal data."
+        },
+        {
+            "title": "//Changes to This Privacy Policy",
+            "paragraph1": "We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page. You are advised to review this Privacy Policy periodically for any changes."
+        },
+        {
+            "title": "//Contact Us",
+            "paragraph1": " If you have any questions about this Privacy Policy, please contact us:",
+            "paragraph2": "By email: [your email address]",
+            "paragraph3": "By phone: [your phone number]",
+            "paragraph4": "By mail: [your business address]"
+        }
     ]
 }

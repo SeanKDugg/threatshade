@@ -32,7 +32,7 @@ Defines the route for services page and passes json data to template
 """
 @app.route('/services/')
 def services():
-    
+
     penetration_testing = data['services'][0]
     vulnerability_scanning = data['services'][1]
     threat_modelling = data['services'][2]
@@ -54,6 +54,84 @@ Defines the route for contact page and passes json data to template
 def contact():
     contact=data['contact'][0]
     return render_template('contact.html', paragraph1=contact['paragraph1'])
+
+
+"""
+Defines the route for services page and passes json data to template
+"""
+@app.route('/privacy-policy/')
+def privacy_policy():
+
+    intro = data['policy'][0]
+    info_we_collect = data['policy'][1]
+    how_we_use_info = data['policy'][2]
+    sharing_info = data['policy'][3]
+    data_security = data['policy'][4]
+    your_rights = data['policy'][5]
+    policy_changes = data['policy'][6]
+    contact_us = data['policy'][7]
+
+    return render_template(
+        'privacy-policy.html',
+        intro_title=intro['title'],
+        intro_paragraph=intro['paragraph1'],
+
+        collect_title=info_we_collect['title'],
+        collect_intro=info_we_collect['paragraph1'],
+        collect_bullets=[
+            info_we_collect['paragraph2'],
+            info_we_collect['paragraph3'],
+            info_we_collect['paragraph4'],
+        ],
+
+        use_title=how_we_use_info['title'],
+        use_intro=how_we_use_info['paragraph1'],
+        use_bullets=[
+            how_we_use_info['paragraph2'],
+            how_we_use_info['paragraph3'],
+            how_we_use_info['paragraph4'],
+            how_we_use_info['paragraph5'],
+            how_we_use_info['paragraph6'],
+            how_we_use_info['paragraph7'],
+            how_we_use_info['paragraph8'],
+            how_we_use_info['paragraph9'],
+        ],
+
+        share_title=sharing_info['title'],
+        share_intro=sharing_info['paragraph1'],
+        share_bullets=[
+            sharing_info['paragraph2'],
+            sharing_info['paragraph3'],
+            sharing_info['paragraph4'],
+            sharing_info['paragraph5'],
+            sharing_info['paragraph6'],
+        ],
+
+        security_title=data_security['title'],
+        security_paragraph=data_security['paragraph1'],
+
+        rights_title=your_rights['title'],
+        rights_intro=your_rights['paragraph1'],
+        rights_bullets=[
+            your_rights['paragraph2'],
+            your_rights['paragraph3'],
+            your_rights['paragraph4'],
+            your_rights['paragraph5'],
+            your_rights['paragraph6'],
+            your_rights['paragraph7'],
+        ],
+
+        changes_title=policy_changes['title'],
+        changes_paragraph=policy_changes['paragraph1'],
+
+        contact_title=contact_us['title'],
+        contact_intro=contact_us['paragraph1'],
+        contact_methods=[
+            contact_us['paragraph2'],
+            contact_us['paragraph3'],
+            contact_us['paragraph4'],
+        ]
+    )
 
 """
 Handles 404 error

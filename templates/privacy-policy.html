@@ -1,0 +1,93 @@
+
+{% extends 'base.html' %}
+
+{% block title %}
+    Privacy Policy | ThreatShade - Data Protection & Cybersecurity Services
+{% endblock %}
+
+{% block head %}
+    {{ super() }}
+    <meta name="description" content="Read ThreatShade's Privacy Policy to learn how we collect, use, and protect your personal data while providing cybersecurity and penetration testing services.">
+
+    {% block styles %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/contact.css') }}">
+    {% endblock %}
+
+{% endblock %}
+
+{% block body %}
+    {% include 'navbar-services.html' %}
+    {% block content %}
+        <div class="container content my-4">
+            <h1 class="yellow text-center text-md-left my-5 py-4 display-4 uppercase">//Privacy Policy</h1>
+            <section>
+                <h2 class="pt-4 pb-2">{{ intro_title }}</h2>
+                <p>{{ intro_paragraph }}</p>
+            </section>
+        
+            <section>
+                <h2 class="py-2">{{ collect_title }}</h2>
+                <p>{{ collect_intro }}</p>
+                <ul>
+                    {% for item in collect_bullets %}
+                        <li>{{ item }}</li>
+                    {% endfor %}
+                </ul>
+            </section>
+        
+            <section>
+                <h2 class="py-2">{{ use_title }}</h2>
+                <p>{{ use_intro }}</p>
+                <ul>
+                    {% for item in use_bullets %}
+                        <li>{{ item }}</li>
+                    {% endfor %}
+                </ul>
+            </section>
+        
+            <section>
+                <h2 class="py-2">{{ share_title }}</h2>
+                <p>{{ share_intro }}</p>
+                <ul>
+                    {% for item in share_bullets %}
+                        <li>{{ item }}</li>
+                    {% endfor %}
+                </ul>
+            </section>
+        
+            <section>
+                <h2 class="py-2">{{ security_title }}</h2>
+                <p>{{ security_paragraph }}</p>
+            </section>
+        
+            <section>
+                <h2 class="py-2">{{ rights_title }}</h2>
+                <p>{{ rights_intro }}</p>
+                <ul>
+                    {% for item in rights_bullets %}
+                        <li>{{ item }}</li>
+                    {% endfor %}
+                </ul>
+            </section>
+        
+            <section>
+                <h2 class="py-2">{{ changes_title }}</h2>
+                <p>{{ changes_paragraph }}</p>
+            </section>
+        
+            <section class="mb-5 pb-5">
+                <h2 class="py-2">{{ contact_title }}</h2>
+                <p>{{ contact_intro }}</p>
+                <ul>
+                    {% for method in contact_methods %}
+                        <li>{{ method }}</li>
+                    {% endfor %}
+                </ul>
+            </section>
+        </div>
+        
+    {% endblock %}
+    <div class="text-black">
+        {% include 'footer-contact.html' %}
+    </div>
+{% endblock %}

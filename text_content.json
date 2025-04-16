@@ -18,13 +18,13 @@
         },
         {
             "title": "//Vulnerability Scanning",
-            "paragraph1": "Our vulnerability scan uses advanced automated processes to identify security weaknesses across your systems, networks, and applications. /n /n We scan for common issues such as outdated software, misconfigurations, and missing security patches. After automated scanning, manual verification ensures that vulnerabilities are accurately identified, minimising false positives.",
+            "paragraph1": "Our vulnerability scan uses advanced automated processes to identify security weaknesses across your systems, networks, and applications. We scan for common issues such as outdated software, misconfigurations, and missing security patches. After automated scanning, manual verification ensures that vulnerabilities are accurately identified, minimising false positives.",
             "paragraph2": "The final report includes a detailed list of vulnerabilities, their severity, and recommendations for effective vulnerability remediation to enhance your overall cybersecurity defence."
         },
         {
             "title": "//Threat Modelling",
             "paragraph1": "Threat modelling is a critical approach to understanding and mitigating security risks in your applications and systems.",
-            "paragraph2": "Our team works with you to identify valuable assets, analyse potential threats, and evaluate existing security controls. This structured process allows us to pinpoint potential vulnerabilities early in the development phase, providing a clear plan for how to defend against attacks. /n /n By integrating threat modelling into your development lifecycle, you can proactively address risks and enhance the security of your organisation from the outset."
+            "paragraph2": "Our team works with you to identify valuable assets, analyse potential threats, and evaluate existing security controls. This structured process allows us to pinpoint potential vulnerabilities early in the development phase, providing a clear plan for how to defend against attacks. By integrating threat modelling into your development lifecycle, you can proactively address risks and enhance the security of your organisation from the outset."
         }
     ],
     "contact": [

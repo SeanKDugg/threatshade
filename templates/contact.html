@@ -13,44 +13,45 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/contact.css') }}">
     {% endblock %}
 
+    <!-- Sending emails -->
+    {% block scripts %}
+    {{ super() }}
+        <script type="text/javascript" src="{{ url_for('static', filename='js/sendEmail.js') }}"></script>
+    {% endblock %}
+
 {% endblock %}
 
 {% block body %}
     {% include 'navbar-contact.html' %}
     {% block content %}
         
-        <form class="container content text-black center pt-5 mt-5px-5 mx-lg-5">
+        <form class="container content text-black center pt-5 mt-5px-5 mx-lg-5" onsubmit="return sendMail(this);">
             <div class="ml-lg-5 pl-lg-5">
                 <h1 class="uppercase yellow ml-lg-5 pl-lg-5 pb-3">// Request <br> Security Assessment</h1>
                 <div class="row uppercase ml-lg-5 pl-lg-5">
-                    <div class="col pt-1 pb-2
-                    ">
+                    <div class="col pt-1 pb-2">
                         <label for="name" class="font-weight-bold">//Name<span class="yellow">*</span></label>
                         <input type="text" name="name" id="name" class="form-control" placeholder="//ENTER" required>
                     </div>
-                    <div class="col pt-1 pb-2
-                    ">
+                    <div class="col pt-1 pb-2">
                         <label for="business" class="font-weight-bold">//Business<span class="yellow">*</span></label>
                         <input type="text" name="business" id="business" class="form-control" placeholder="//ENTER" required>
                     </div>
                 </div>
                 <div class="row uppercase ml-lg-5 pl-lg-5">
-                    <div class="col pt-1 pb-2
-                    ">
+                    <div class="col pt-1 pb-2">
                         <label for="startdate" class="font-weight-bold">//Prefered start date<span class="yellow">*</span></label>
                         <input type="date" name="start" id="startdate" class="form-control" required>
                     </div>
-                    <div class="col pt-1 pb-2
-                    ">
+                    <div class="col pt-1 pb-2">
                         <label for="emailaddress" class="font-weight-bold">//Email<span class="yellow">*</span></label>
                         <input type="email" name="email" id="emailaddress" class="form-control" placeholder="Email" required>
                     </div>
                 </div>
                 <div class="row ml-lg-5 pl-lg-5">
-                    <div class="col pt-1 pb-2
-                    ">
+                    <div class="col pt-1 pb-2">
                         <label for="assesmenttype" class="font-weight-bold uppercase">//Assessment type<span class="yellow">*</span></label>
-                        <textarea name="assesmenttype" id="assesmenttype" class="form-control" placeholder="// ENTER" required>
+                        <textarea rows="10" name="assesmenttype" id="assesmenttype" class="form-control" placeholder="// ENTER" required>
                         </textarea>
                     </div>
                 </div>

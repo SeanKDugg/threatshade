@@ -50,10 +50,10 @@ def services():
 """
 Defines the route for contact page and passes json data to template
 """
-@app.route('/contact-us/')
+@app.route('/contact-us/', methods=['GET','POST'])
 def contact():
-    contact=data['contact'][0]
-    return render_template('contact.html', paragraph1=contact['paragraph1'])
+    contact_data=data['contact'][0]
+    return render_template('contact.html', paragraph1=contact_data['paragraph1'])
 
 
 """

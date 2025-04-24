@@ -1,10 +1,11 @@
-/* Sending email through email.js */
+// Sending email through email.js
 
 function sendMail(contactForm) {
-    // Prevent default form submission
+    // Preventing default form submission
     event.preventDefault();
 
-    emailjs.send("service_374z12e", "template_ofnkbd8", {
+    // Sending form data (replace EmailJS service and template IDs if needed)
+    emailjs.send("service_dvw7otg", "template_hdww7kn", {
         "from_name": contactForm.name.value,
         "from_business": contactForm.business.value,
         "start_date": contactForm.startdate.value,

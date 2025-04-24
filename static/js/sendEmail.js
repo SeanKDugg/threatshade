@@ -5,7 +5,7 @@ function sendMail(contactForm) {
     event.preventDefault();
 
     // Sending form data (replace EmailJS service and template IDs if needed)
-    emailjs.send("service_dvw7otg", "template_hdww7kn", {
+    emailjs.send("service_dvw7otg", "template_4e4n1g7", {
         "from_name": contactForm.name.value,
         "from_business": contactForm.business.value,
         "start_date": contactForm.startdate.value,
